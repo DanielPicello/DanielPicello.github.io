@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --main-color: #037bfc;
+    --background-section: white;
+    --h1-img: white;
+    --bar-background-color: #59a9ff;
+    --date-color: #037bfc;
+    --icon-color: #037bfc;
 }
 
 * {
@@ -23,11 +30,49 @@ main {
     
 }
 
-section {
-    background-color: white;
+h1, h2, h3 {
+    font-family: "Archivo Black", sans-serif;
+}
+
+p, li, span, a {
+    font-family: "Pliant", sans-serif;
+}
+
+.left, .expiriences, .education, .professional, .aboutme {
+    background-color: var(--background-section);
     border-radius: 10px;
-    height: 100%;
+    overflow: hidden;
     
+}
+
+.expiriences, .education, .professional, .aboutme {
+    padding: 10px;
+}
+
+.left {
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.5); 
+}
+
+.expiriences, .education, .professional, .aboutme {
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.5); 
+}
+
+.date {
+    color: var(--date-color);
+}
+
+i {
+    color: var(--icon-color)
+}
+
+.right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
 }
 
 .left-image {
@@ -43,5 +88,65 @@ section {
 .left-image h1 {
     position: absolute;
     bottom: 0;
+    color: var(--h1-img);
+}
+
+.personal, .habilities, .languages {
+    padding: 16px;
+    line-height: 20px;
+}
+
+.progress {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    background-color: var(--bar-background-color);
+    transition: 100ms ease;
+    border-radius: 20px
+}
+
+.bar {
+    border-radius: 20px;
+    height: 100%;
+    /* width: 50%; */
+    background-color: var(--main-color);
+}
+
+.name-item {
+    font-weight: bold;
+}
+
+footer {
     color: white;
+    background-color: black;
+    padding: 1.5rem; /* 24 px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 5px;
+    transition: 100ms ease;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+footer a:hover {
+    color:white;
+    border: 2px solid white;
+}
+
+.item, item-2 {
+    margin-top: 15px;
+}
+
+.name-item, .date, .text {
+    margin-top: 5px;
+}
+.text {
+    padding-bottom: 10px;
 }
