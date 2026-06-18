@@ -83,12 +83,15 @@ ul {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .left-image h1 {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     color: var(--h1-img);
+    width: 100%;
+    text-align: center;
 }
 
 .personal, .habilities, .languages {
@@ -116,6 +119,17 @@ ul {
     font-weight: bold;
 }
 
+.item, item-2 {
+    margin-top: 15px;
+}
+
+.name-item, .date, .text {
+    margin-top: 5px;
+}
+.text {
+    padding-bottom: 10px;
+}
+
 footer {
     color: white;
     background-color: black;
@@ -138,15 +152,4 @@ footer a {
 footer a:hover {
     color:white;
     border: 2px solid white;
-}
-
-.item, item-2 {
-    margin-top: 15px;
-}
-
-.name-item, .date, .text {
-    margin-top: 5px;
-}
-.text {
-    padding-bottom: 10px;
 }
