@@ -30,6 +30,12 @@ main {
     
 }
 
+@media (max-width: 1020px) {
+    main {
+       grid-template-columns: 1fr; 
+    }
+}
+
 h1, h2, h3 {
     font-family: "Archivo Black", sans-serif;
 }
@@ -38,14 +44,14 @@ p, li, span, a {
     font-family: "Pliant", sans-serif;
 }
 
-.left, .expiriences, .education, .professional, .aboutme {
+.left, .expiriences, .education, .professional, .aboutme, .projects {
     background-color: var(--background-section);
     border-radius: 10px;
     overflow: hidden;
     
 }
 
-.expiriences, .education, .professional, .aboutme {
+.expiriences, .education, .professional, .aboutme, .projects {
     padding: 10px;
 }
 
@@ -53,7 +59,7 @@ p, li, span, a {
     box-shadow: 5px 5px 10px rgba(0,0,0, 0.5); 
 }
 
-.expiriences, .education, .professional, .aboutme {
+.expiriences, .education, .professional, .aboutme, .projects {
     box-shadow: 5px 5px 10px rgba(0,0,0, 0.5); 
 }
 
@@ -128,6 +134,69 @@ ul {
 }
 .text {
     padding-bottom: 10px;
+}
+
+.projects {
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.projects h2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    justify-content: center;
+    color: #fff;
+}
+
+.project-card {
+    width: 100%;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-info h3 {
+    font-size: 13px;
+    margin: 0;
+}
+
+.btn-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 8px;
+    font-size: 12px;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 footer {
